@@ -1,0 +1,68 @@
+   {% extends "base.html" %}
+   {% block conteudo %}
+        <div class="back_re">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="title">
+                      <h2>Fale com a gente</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div>
+         <ul class="social_icon_2">
+            <li><a href="contate.me/@NOMEre"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/NOMENOME_espacodebeleza/?hl=pt-br"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+         </ul>
+      </div>
+      <!--  contact -->
+      <div class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h4>     Voce pode marcar um horario, dar sugestões e tambem nos avaliar por aqui. </h4>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6 offset-md-3">
+                  <form id="request" class="main_form" action="{{url_for('homepage')}}" method="POST">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Nome" type="type" name="nome"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Email " type="type" name="email"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Numero de celular" type="type" name="numero">                          
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="textarea" placeholder="Mensagem" type="type" Message="Name" name="mensagem"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Enviar</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="map_main">
+                     <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d544.7976512630123!2d-46.74420104047487!3d-23.28137049283673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee71ed0e79239%3A0x8ad8b83195b70b9d!2sNOME%20NOME%20Sal%C3%A3o%20de%20beleza!5e0!3m2!1spt-BR!2sbr!4v1687285191065!5m2!1spt-BR!2sbr" width="600" height="386" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+      {% endblock conteudo %}
